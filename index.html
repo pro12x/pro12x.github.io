@@ -321,8 +321,8 @@
                         </div>
                         
                         <div class="col-lg-8 mt-5 mt-lg-0">
-                            <!--<form action="https://formsubmit.co/janelaffranchis@gmail.com" method="post" role="form" class="php-email-form">-->
-                            <form action="https://formsubmit.co/el/padicu" method="post" role="form" class="php-email-form">
+                            <form action="#" method="post" role="form" class="php-email-form" id="form">
+                            <!--<form action="https://formsubmit.co/el/padicu" method="post" role="form" class="php-email-form">-->
                                 <div class="form-row">
                                     <div class="col-md-6 form-group">
                                         <input type="text" name="name" id="name" class="form-control" placeholder="Your name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
@@ -341,7 +341,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                    <textarea class="form-control" name="message" id="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                                     <div class="validate"></div>
                                 </div>
 
@@ -410,5 +410,34 @@
         <script src="assets/js/main.js"></script>
 
         <!-- API sendMail -->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+        <script>
+            const form = document.querySelector("#form");
+
+            //FUnction sendMail
+            function sendMail(e)
+            {
+                e.preventDefault();
+
+                const name = document.querySelector("#name"),
+                      email = document.querySelector("#email"),
+                      subject = document.querySelector("#subject"),
+                      message = document.querySelector("#message");
+
+                Email.send({
+                    SecureToken : "7c7f8065-a366-426c-a3ac-4ab8b476d3fd",
+                    To : 'janelaffranchis@gmail.com',
+                    From : email.value,
+                    Subject : subject.value,
+                    Body : name.value + "/n/n" + message.value
+                }).then(
+                    message => alert(message)
+                );
+
+            }
+
+            form.addEventListener("submit", sendMail)
+        </script>
     </body>
 </html>
