@@ -91,7 +91,7 @@
                                 <div class="col-lg-6">
                                     <ul>
                                         <!--<li><i class="icofont-rounded-right"></i> <strong>Age:</strong> 12</li>-->
-                                        <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> License</li>
+                                        <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> Bachelor's degree</li>
                                         <li><i class="icofont-rounded-right"></i> <strong>E-mail:</strong> proverbesaffranchis@outlook.fr</li>
                                         <li><i class="icofont-rounded-right"></i> <strong>Freelance:</strong> Available</li>
                                     </ul>
@@ -291,6 +291,74 @@
             <!-- End Testimonials Section -->
 
             <!-- Contact Section -->
+            <section class="contact" id="contact">
+                <div class="container" data-aos="fade-up">
+                    <div class="section-title">
+                        <h2>Contact</h2>
+                    </div>
+
+                    <div class="row mt-1">
+                        <div class="col-lg-4">
+                            <div class="info">
+                                <div class="address">
+                                    <i class="icofont-google-map"></i>
+                                    <h4>Location:</h4>
+                                    <p>Ngor, 12000, Dakar, Senegal</p>
+                                </div>
+
+                                <div class="email">
+                                    <i class="icofont-envelope"></i>
+                                    <h4>Email:</h4>
+                                    <p>janelaffranchis@gmail.com</p>
+                                </div>
+
+                                <div class="phone">
+                                    <i class="icofont-phone"></i>
+                                    <h4>Call:</h4>
+                                    <p>+221 77 860 19 90</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-8 mt-5 mt-lg-0">
+                            <!--<form action="https://formsubmit.co/janelaffranchis@gmail.com" method="post" role="form" class="php-email-form">-->
+                            <form action="https://formsubmit.co/el/padicu" method="post" role="form" class="php-email-form">
+                                <div class="form-row">
+                                    <div class="col-md-6 form-group">
+                                        <input type="text" name="name" id="name" class="form-control" placeholder="Your name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                                        <div class="validate"></div>
+                                    </div>
+
+                                    <div class="col-md-6 form-group">
+                                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                        <div class="validate"></div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                    <div class="validate"></div>
+                                </div>
+
+                                <div class="form-group">
+                                    <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                                    <div class="validate"></div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <div class="loading">Loading</div>
+                                    <div class="error-message"></div>
+                                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                                </div>
+
+                                <div class="text-center">
+                                    <button type="submit">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <!-- End Contact Section -->
         </main>
 
@@ -340,5 +408,7 @@
 
         <!-- Template Main JS File -->
         <script src="assets/js/main.js"></script>
+
+        <!-- API sendMail -->
     </body>
 </html>
