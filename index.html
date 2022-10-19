@@ -38,6 +38,7 @@
                     <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
                     <li><a href="#skills"><i class="bx bx-dice-5"></i> <span>Skills</span></a></li>
                     <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+                    <!--<li><a href="#projects"><i class='bx bxs-package'></i> <span>Projects</span></a></li>-->
                     <!--<li><a href="#portfolio"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
                     <li><a href="#services"><i class="bx bx-server"></i> <span>Services</span></a></li>
                     <li><a href="#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>-->
@@ -326,22 +327,26 @@
                             <!--<form action="https://formsubmit.co/el/padicu" method="post" role="form" class="php-email-form">-->
                                 <div class="form-row">
                                     <div class="col-md-6 form-group">
+                                        <label for="name" class="hide">Name</label>
                                         <input type="text" name="name" id="name" class="form-control" placeholder="Your name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
                                         <div class="validate"></div>
                                     </div>
 
                                     <div class="col-md-6 form-group">
+                                        <label for="email" class="hide">Email</label>
                                         <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
                                         <div class="validate"></div>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
+                                    <label for="subject" class="hide">Subject</label>
                                     <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                                     <div class="validate"></div>
                                 </div>
 
                                 <div class="form-group">
+                                    <label for="message" class="hide">Message</label>
                                     <textarea class="form-control" name="message" id="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                                     <div class="validate"></div>
                                 </div>
@@ -411,9 +416,9 @@
         <script src="assets/js/main.js"></script>
 
         <!-- API sendMail -->
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <!--<script src="https://smtpjs.com/v3/smtp.js"></script>-->
 
-        <script>
+        <!--<script>
             const form = document.querySelector("#form");
 
             //FUnction sendMail
@@ -439,6 +444,6 @@
             }
 
             form.addEventListener("submit", sendMail)
-        </script>
+        </script>-->
     </body>
 </html>
