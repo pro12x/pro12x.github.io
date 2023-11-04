@@ -34,20 +34,20 @@ $(document).ready(function () {
     // Get year
     $('#getYear').text(year)
 
-    $("form").submit(function(event) {
-        event.preventDefault();
+    // $("form").submit(function(event) {
+    //     event.preventDefault();
 
-        // Envoyer le formulaire à EmailJS
-        emailjs.sendForm("dbjdNaoX2CJZyjdsO", "template_7z76but", this)
-            .then(function(response) {
-                console.log("E-mail envoyé avec succès", response);
-                alert("Votre message a été envoyé avec succès.");
-                $("form")[0].reset();
-            }, function(error) {
-                console.error("Erreur lors de l'envoi de l'e-mail", error);
-                alert("Une erreur est survenue lors de l'envoi du message.");
-            });
-    });
+    //     // Envoyer le formulaire à EmailJS
+    //     emailjs.sendForm("dbjdNaoX2CJZyjdsO", "template_7z76but", this)
+    //         .then(function(response) {
+    //             console.log("E-mail envoyé avec succès", response);
+    //             alert("Votre message a été envoyé avec succès.");
+    //             $("form")[0].reset();
+    //         }, function(error) {
+    //             console.error("Erreur lors de l'envoi de l'e-mail", error);
+    //             alert("Une erreur est survenue lors de l'envoi du message.");
+    //         });
+    // });
 })
 
 
